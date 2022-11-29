@@ -22,8 +22,8 @@ body{
 }
 
 .number{
-  width: 60%;
-  height: 40%;
+  width: 20rem;
+  height: 20rem;
   border-radius: 100%;
   background: #181818;
   display:flex;
