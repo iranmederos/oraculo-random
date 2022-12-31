@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body{
-  background: linear-gradient(280deg, rgb(100,00,00), #181818);
+  background: linear-gradient(280deg, #2d0355, #181818);
   font-family: 'Roboto', sans-serif;
 }
 
 .container{
-  background: #B2B2B2;
-  width: 85%;
-  height: 75%;
+  background: #00001d;
+  width: 75%;
+  height: 85%;
   position: absolute;
   margin: 0 auto;
   top: 50%;
@@ -25,17 +25,16 @@ body{
   width: 20rem;
   height: 20rem;
   border-radius: 100%;
-  background: #181818;
+  background: #170239;
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
 .name{
-  color:black;
+  color:rgb(255, 255, 255);
   text-align: center;
   font-size: 200%;
-  color: #181818;
 }
 
 .button{
@@ -49,7 +48,7 @@ body{
   width: 85%;
   height: 5%;
   box-shadow: 0 9px #999;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .button:active{
@@ -62,4 +61,13 @@ body{
 .dat{
   color: whitesmoke;
   font-size: 200%
+}
+
+label{
+  color: #EEEEEE;
+}
+
+input{
+  width: 250px;
+  height: 30px;
 }
