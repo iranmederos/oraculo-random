@@ -11,10 +11,9 @@ window.onload = () => {
       n = Math.floor(Math.random() * 36) + 1;
       index = n;
       num.innerHTML = `
-    <span class='dat'>${n}<span>
+    <span class='dat'>${oraculo[index].num}<span>
+    <p class='dat2'>${oraculo[index].titulo}<p>
   `;
     }
   });
-  console.log(oraculo)
-
 }

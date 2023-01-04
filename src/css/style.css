@@ -28,7 +28,8 @@ body{
   background: #170239;
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  text-align: center;
 }
 
 .name{
@@ -63,6 +64,11 @@ body{
   font-size: 200%
 }
 
+.dat2{
+  color: whitesmoke;
+  font-size: 100%
+}
+
 label{
   color: #EEEEEE;
 }
@@ -70,4 +76,5 @@ label{
 input{
   width: 250px;
   height: 30px;
+  text-align: center;
 }
