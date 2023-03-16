@@ -8,7 +8,7 @@ body{
 .container{
   background: #00001d;
   width: 75%;
-  height: 85%;
+  height: auto;
   position: absolute;
   margin: 0 auto;
   top: 50%;
@@ -77,4 +77,15 @@ input{
   width: 250px;
   height: 30px;
   text-align: center;
+}
+
+#respuesta{
+  color: white;
+  text-align: center;
+  width: 60%;
+  border: 1px solid white;
+}
+
+hr{
+  color: white;
 }

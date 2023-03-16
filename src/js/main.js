@@ -1,6 +1,7 @@
 window.onload = () => {
   btn = document.querySelector('.button');
   num = document.querySelector('.number');
+  respuesta= document.querySelector("#respuesta");
   index = 0;
   btn.addEventListener('click', () => {
     text = document.querySelector('#text_field').value;
@@ -13,7 +14,10 @@ window.onload = () => {
       num.innerHTML = `
     <span class='dat'>${oraculo[index].num}<span>
     <p class='dat2'>${oraculo[index].titulo}<p>
-  `;
+    
+    `;
+    respuesta.innerHTML=`${oraculo[index].texto}`;  
     }
+    
   });
 }
