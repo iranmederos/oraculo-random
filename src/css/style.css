@@ -3,15 +3,32 @@
 body{
   background: linear-gradient(280deg, #2d0355, #181818);
   font-family: 'Roboto', sans-serif;
+  display: flex;
 }
 
 .container{
   background: #00001d;
   width: 75%;
-  height: auto;
+  height: fit-content;
   position: absolute;
   margin: 0 auto;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container_2{
+  background: #00001d;
+  width: 75%;
+  height: fit-content;
+  position: absolute;
+  margin: 0 auto;
+  top: 130%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
