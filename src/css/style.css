@@ -4,17 +4,15 @@ body{
   background: linear-gradient(280deg, #2d0355, #181818);
   font-family: 'Roboto', sans-serif;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .container{
   background: #00001d;
   width: 75%;
   height: fit-content;
-  position: absolute;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 10px;
   display:flex;
   align-items: center;
@@ -26,11 +24,6 @@ body{
   background: #00001d;
   width: 75%;
   height: fit-content;
-  position: absolute;
-  margin: 0 auto;
-  top: 130%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 10px;
   display:flex;
   align-items: center;
