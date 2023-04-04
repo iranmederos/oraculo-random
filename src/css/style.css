@@ -18,6 +18,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 5px;
 }
 
 .container_2{
@@ -29,6 +30,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 5px;
 }
 
 .number{
