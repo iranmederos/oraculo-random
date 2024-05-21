@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-  margin-top: 35vh;
+  margin-top: 15vh;
   padding: 0;
   background: linear-gradient(280deg, #2d0355, #181818);
   width: 50%;
@@ -22,14 +22,23 @@ body{
   flex-direction: column;
 }
 
-.name{
+.title{
   color:rgb(255, 255, 255);
   text-align: center;
   font-size: 200%;
 }
 
+p{
+  color: #EEEEEE;
+  text-align: justify;
+  padding: 20px;
+}
+
 .button{
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 15px;
   background-color: #EEEEEE;
   padding: 10px;
@@ -39,25 +48,9 @@ body{
   border-radius: 5px;
 }
 
-a{
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-}
-
 .button:active{
   background-color: #D6E4E5;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   
-}
-
-label{
-  color: #EEEEEE;
-}
-
-input{
-  width: 60%;
-  height: 30px;
-  text-align: center;
 }

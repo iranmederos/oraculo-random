@@ -1,23 +1,14 @@
 window.onload = () => {
-  btn = document.querySelector('.button');
-  num = document.querySelector('.number');
-  respuesta= document.querySelector("#respuesta");
-  index = 0;
-  btn.addEventListener('click', () => {
-    text = document.querySelector('#text_field').value;
-    if (text == null || text == '' || text.length < 5) {
-      alert('Debes ingresar una pregunta, te recomiendo pensarla bien');
-      console.log(text.value)
-    } else {
-      n = Math.floor(Math.random() * 36) + 1;
-      index = n;
-      num.innerHTML = `
-    <span class='dat'>${oraculo[index].num}<span>
-    <p class='dat2'>${oraculo[index].titulo}<p>
-    
-    `;
-    respuesta.innerHTML=`${oraculo[index].texto}`;  
-    }
-    
-  });
+    btn = document.querySelector('.button');
+    btn.addEventListener('click', () => {
+        text = document.querySelector('#text_field').value;
+        if (text == null || text == '' || text.length < 5) {
+            const errorMessage = 'Debes ingresar una pregunta de al menos 5 caracteres.';
+            alert(errorMessage);
+            text.focus();
+        }
+        else {
+            window.location.href = `choice_view.html`;
+        }
+    });
 }
