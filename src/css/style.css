@@ -11,10 +11,10 @@ body{
 }
 
 .container{
-  margin-top: 35vh;
+  margin-top: 15vh;
   padding: 0;
   background: linear-gradient(280deg, #2d0355, #181818);
-  width: 50%;
+  width: 70%;
   border-radius: 50px;
   display:flex;
   align-items: center;

@@ -14,7 +14,7 @@ body{
   margin-top: 15vh;
   padding: 0;
   background: linear-gradient(280deg, #2d0355, #181818);
-  width: 50%;
+  width: 70%;
   border-radius: 50px;
   display:flex;
   align-items: center;
@@ -31,14 +31,11 @@ body{
 p{
   color: #EEEEEE;
   text-align: justify;
-  padding: 20px;
+  padding: 5px;
 }
 
 .button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  text-align: center;
   margin: 15px;
   background-color: #EEEEEE;
   padding: 10px;
@@ -47,6 +44,13 @@ p{
   box-shadow: 0 9px #999;
   border-radius: 5px;
 }
+
+a{
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
 
 .button:active{
   background-color: #D6E4E5;
