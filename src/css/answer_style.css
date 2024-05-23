@@ -50,10 +50,8 @@ a{
   color: #000000;
 }
 
-
 .button:active{
   background-color: #D6E4E5;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-  
 }
