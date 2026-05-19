@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/base.css">
     <link rel="stylesheet" href="src/css/answer_style.css">
-    <script src="src/js/book.js"></script>
-    <script src="src/js/answer.js"></script>
-    <title>Oraculo del guerrero</title>
+    <script src="src/js/book.js" defer></script>
+    <script src="src/js/answer.js" defer></script>
+    <title>Oráculo del Guerrero — Tu respuesta</title>
 </head>
 
 <body>
 <div class="container">
-    <h3 class="title"></h3>
-    <p class="answer"></p>
+    <p class="question-echo" id="question-echo"></p>
+    <h3 class="title" id="chapter-title"></h3>
+    <p class="answer" id="chapter-answer"></p>
     <a href="index.html">
-        <div class="button">volver</div>
+        <button class="button" type="button">volver</button>
     </a>
 </div>
 

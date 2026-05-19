@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* ── Design tokens ────────────────────────────────────── */
+:root {
+  --bg-gradient:    linear-gradient(280deg, #2d0355, #181818);
+  --color-primary:  #2d0355;
+  --color-surface:  #EEEEEE;
+  --color-surface-active: #D6E4E5;
+  --color-text:     #EEEEEE;
+  --color-link:     #000000;
+  --color-shadow:   #999;
+  --color-shadow-active: #666;
+  --font-main:      'Roboto', sans-serif;
+}
+
+/* ── Reset ────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ── Base ─────────────────────────────────────────────── */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient);
+  font-family: var(--font-main);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ── Layout ───────────────────────────────────────────── */
+.container {
+  margin-top: 15vh;
+  padding: 0 16px;
+  width: min(70%, 600px);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Button ───────────────────────────────────────────── */
+.button {
+  text-align: center;
+  margin: 15px;
+  background-color: var(--color-surface);
+  padding: 10px;
+  width: 85%;
+  box-shadow: 0 9px var(--color-shadow);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  color: var(--color-link);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 7px var(--color-shadow);
+}
+
+.button:active {
+  background-color: var(--color-surface-active);
+  box-shadow: 0 5px var(--color-shadow-active);
+  transform: translateY(4px);
+}
+
+/* ── Links ────────────────────────────────────────────── */
+a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-link);
+}
+
+/* ── Question echo ────────────────────────────────────── */
+.question-echo {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.55;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 4px;
+  min-height: 1.2em;
+}

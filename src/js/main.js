@@ -1,14 +1,19 @@
-window.onload = () => {
-    btn = document.querySelector('.button');
+window.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.button');
+    const field = document.querySelector('#text_field');
+
     btn.addEventListener('click', () => {
-        text = document.querySelector('#text_field').value;
-        if (text == null || text === '' || text.length < 5) {
-            const errorMessage = 'Debes ingresar una pregunta de al menos 5 caracteres.';
-            alert(errorMessage);
-            text.focus();
-        }
-        else {
-            window.location.href = `choice_view.html`;
+        const text = field.value;
+        if (!text || text.length < 5) {
+            alert('Debes ingresar una pregunta de al menos 5 caracteres.');
+            field.focus();
+        } else {
+            sessionStorage.setItem('question', text);
+            window.location.href = 'choice_view.html';
         }
     });
-}
+
+    field.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') btn.click();
+    });
+});

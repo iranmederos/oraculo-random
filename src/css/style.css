@@ -1,61 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* index.html — page-specific styles */
 
-body{
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(280deg, #2d0355, #181818);
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container{
-  margin-top: 15vh;
-  padding: 0;
-  width: 70%;
-  border-radius: 50px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.name{
-  color:rgb(255, 255, 255);
+.name {
+  color: #fff;
   text-align: center;
-  font-size: 200%;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
 }
 
-.button{
-  text-align: center;
-  margin: 15px;
-  background-color: #EEEEEE;
-  padding: 10px;
-  width: 85%;
-  height: 5%;
-  box-shadow: 0 9px #999;
-  border-radius: 5px;
+label {
+  color: var(--color-text);
 }
 
-a{
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-}
-
-.button:active{
-  background-color: #D6E4E5;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-label{
-  color: #EEEEEE;
-}
-
-input{
-  width: 60%;
-  height: 30px;
+input {
+  width: min(60%, 320px);
+  height: 34px;
   text-align: center;
 }

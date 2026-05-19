@@ -1,39 +1,32 @@
+/* choice_view.html — page-specific styles */
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background: linear-gradient(280deg, #2d0355, #181818);
 }
 
-h1{
+h1 {
     color: #f7f7f7;
+    letter-spacing: 0.12em;
     z-index: 1;
+    margin-bottom: 2px;
 }
 
-a {
+a.circle-link {
     position: absolute;
     width: 50px;
     height: 50px;
 }
 
 .circle {
-    position: absolute;
     width: 50px;
     height: 50px;
     background-color: #f7f7f7;
     border-radius: 50%;
     animation: breathe 6s ease-in-out infinite;
-    border: 1px solid #2d0355;
+    border: 1px solid var(--color-primary);
 }
 
 @keyframes breathe {
-    0% { transform: scale(0.7); opacity: 0.7; }
-    25% { transform: scale(1); opacity: 0.8; }
-    75% { transform: scale(0.7); opacity: 0.7; }
-    100% { transform: scale(0.7); opacity: 0.7; }
+    0%,  100% { transform: scale(1);    opacity: 0.7; }
+    50%        { transform: scale(1.15); opacity: 1;   }
 }

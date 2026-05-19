@@ -1,57 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* answer.html — page-specific styles */
 
-body{
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(280deg, #2d0355, #181818);
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container{
-  margin-top: 15vh;
-  padding: 0;
-  width: 70%;
-  border-radius: 50px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.title{
-  color:rgb(255, 255, 255);
+.title {
+  color: #fff;
   text-align: center;
-  font-size: 200%;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
-p{
-  color: #EEEEEE;
-  text-align: justify;
+.answer {
+  color: var(--color-text);
+  text-align: left;
   padding: 5px;
-}
-
-.button{
-  text-align: center;
-  margin: 15px;
-  background-color: #EEEEEE;
-  padding: 10px;
-  width: 85%;
-  height: 5%;
-  box-shadow: 0 9px #999;
-  border-radius: 5px;
-}
-
-a{
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-}
-
-.button:active{
-  background-color: #D6E4E5;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  line-height: 1.7;
+  font-weight: 300;
 }
